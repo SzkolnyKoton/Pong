@@ -17,12 +17,12 @@ public class Player_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(upKey))
+        if (Input.GetKey(upKey) && transform.position.y < 3.5)
         {
             transform.position += Vector3.up * Time.deltaTime * speed;
         }
 
-        if (Input.GetKey(downKey))
+        if (Input.GetKey(downKey) && transform.position.y > -3.5)
         {
             transform.position += Vector3.down * Time.deltaTime * speed;
         }
