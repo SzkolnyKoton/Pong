@@ -174,7 +174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40091068}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 9.4, y: 0, z: 0}
+  m_LocalPosition: {x: 10, y: 0, z: 0}
   m_LocalScale: {x: 11, y: 1, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 427739339}
   - component: {fileID: 427739338}
   m_Layer: 5
-  m_Name: Right Player Score (1)
+  m_Name: Right Player Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -512,7 +512,7 @@ GameObject:
   - component: {fileID: 1110805987}
   - component: {fileID: 1110805990}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: Right Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -658,8 +658,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e3241237e47fb54b9c24f297161a280, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftPlayerScoreText: {fileID: 0}
-  rightPlayerScoreText: {fileID: 0}
+  leftPlayerScoreText: {fileID: 1713289168}
+  rightPlayerScoreText: {fileID: 427739338}
   leftPlayerScore: 0
   rightPlayerScore: 0
 --- !u!114 &1377888454
@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 1504962003}
   - component: {fileID: 1504962006}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Left Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -963,7 +963,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1058,7 +1058,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799203489}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -9.4, y: 0, z: 0}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 11, y: 1, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1079,7 +1079,7 @@ GameObject:
   - component: {fileID: 1835165906}
   - component: {fileID: 1835165907}
   m_Layer: 0
-  m_Name: Square (2)
+  m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1189,6 +1189,7 @@ MonoBehaviour:
   ballspeed: 14
   vel: {x: 0, y: 0, z: 0}
   isPlaying: 0
+  scoreMenager: {fileID: 1377888453}
 --- !u!61 &1835165907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1251,7 +1252,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
